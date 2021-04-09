@@ -1,13 +1,13 @@
 module.exports=(data,brandParams,genderParams)=>{
     switch (brandParams) {
-        case "Ray-ban":
+        case "Ray-Ban":
             switch(genderParams){
                 case "all":
-                    return data.filter(x=>x.name=="Ray-ban")
-                case "male":
-                    return data.filter(x=>x.name=="Ray-ban" && x.gender=='male')  
-                case "female":
-                    return data.filter(x=>x.name=="Ray-ban" && x.gender=='female')
+                    return data.filter(x=>x.name=="Ray-Ban")
+                case "men":
+                    return data.filter(x=>x.name=="Ray-Ban" && x.gender=='male')  
+                case "women":
+                    return data.filter(x=>x.name=="Ray-Ban" && x.gender=='female')
             }
         default:
             break;
