@@ -10,4 +10,5 @@ router.use('/categorybrands',categoryBrandsController)
 router.use('/bestsellerproducts',bestsellerProductsController)
 router.use('/brands',brandsController)
 
+
 module.exports=router
