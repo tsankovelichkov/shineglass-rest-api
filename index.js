@@ -7,7 +7,7 @@ const routes=require('./routes')
 require('./config/mongoose')(app)
 
 app.use(cors())
-
+app.use(express.json())
 app.use(routes)
 
 
