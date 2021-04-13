@@ -10,6 +10,13 @@ router.post("/register",(req,res)=>{
         .then(user=>res.json(user))
 })
 
+router.post("/login",(req,res)=>{
+    let {email,password}=req.body
+    authService.login({email,password})
+    .then(token=>res.json(token))
+     
+})
+
 
 
 
